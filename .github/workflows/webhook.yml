@@ -1,6 +1,6 @@
 name: "Webhook Event example"
-on: workflow_dispatch
-on:
+on: 
+ workflow_dispatch:
   repository_dispatch:
     types:
       - webhook
