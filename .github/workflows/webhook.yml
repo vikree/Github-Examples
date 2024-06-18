@@ -1,5 +1,5 @@
 name: "Webhook Event example"
-
+on: workflow_dispatch
 on:
   repository_dispatch:
     types:
