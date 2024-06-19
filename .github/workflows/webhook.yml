@@ -1,6 +1,6 @@
 name: "Webhook Event example"
-on: 
- workflow_dispatch:
+
+on:
   repository_dispatch:
     types:
       - webhook
@@ -12,4 +12,4 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
       - name: Run a script
-        run: echo "Event of type"
+        run: 'echo "Event of type: $GITHUB_EVENT_NAME"'
